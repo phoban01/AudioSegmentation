@@ -10,6 +10,8 @@
 //#define ARMA_64BIT_WORD
 //#endif
 
+//Audio segmentation -
+
 #include <iostream>
 #include <cmath>
 
@@ -396,6 +398,8 @@ Mat<double> RP(std::vector<std::vector<float>>input, int m, int v)
         cout.flush();
         }
     cout << endl;
+    
+    //@IMPLEMENT MEDIAN FILTERING HERE?
 //
 //    int win_size = 70;
 //    int halfw = win_size / 2;

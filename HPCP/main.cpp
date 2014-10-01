@@ -386,8 +386,8 @@ Mat<double> RP(std::vector<std::vector<float>>input, int m, int v)
         for (int j = 0;j < n2;++j) {
 //            k = wrapIndex(i + (j - 2),n2);
 //            L(i,j) = R((k+1)%n2,j);
-            if ((j - i) > 0) {
-                L(i,j) = R(i,j-i);
+            if ((i - j) > 0) {
+                L(i,j) = R(i,i-j);
             } else {
                 L(i,j) = 0;
             }
